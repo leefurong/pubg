@@ -1,3 +1,4 @@
+# coding=utf-8
 from telemetry_finder import findTelemetry
 from telemetriesSaver import saveTelemetries
 import json
@@ -39,20 +40,15 @@ def fetchData(playerName):
 
     tprint('Got match ids: ' + str([match['id'] for match in matches]))
 
-    telemetries = []
-
     print('total'+str(len(matches)))
     i=1
 
     for match in matches:
         print(i)
-        i+=1
         telemetry = findTelemetry(ZONE, match['id'], http)
-        tprint('found telemetry for match id:'+match['id'])
-        telemetries.append(telemetry)
-        tprint('append finished')
-
-    saveTelemetries(playerName, telemetries)
+        mode = i == 1 and 'w' or 'a'
+        saveTelemetries(playerName, [telemetry], mode)
+        i+=1
 
 if __name__ == '__main__':
     for name in playerNames:

@@ -1,7 +1,7 @@
 import urllib3
 import certifi
 
-MATCH_LIMIT = 300
+MATCH_LIMIT = 1
 # prepare parameters
 playerNames = ['17_shou', '4AMGodVzzZ'] #, 'SnakeTC-baolei']
 # playerId17_shou = 'account.6694a37350824b4faa9bd582510caa43'
