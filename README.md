@@ -1,3 +1,12 @@
+# 克隆代码到本地
+git clone git@github.com:leefurong/pubg.git
+
+# 抓取新内容
+git pull
+
+# 其他git操作
+请阅读《Git Pro》的前几章。
+
 # 运行抓取代码
 python3 dataFetcher.py
 
