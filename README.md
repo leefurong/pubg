@@ -15,6 +15,8 @@ config: config.py
 
 # 字段设置方法
 运行程序之后，如果程序发现了新字段， 会打印出来这样的内容：
+
+
 `fieldWheelDestroy += \
 ['_D', '_T', 'attackId', 'attacker.accountId', 'attacker.health', 'attacker.isInBlueZone', 'attacker.isInRedZone', 'attacker.location.x', 'attacker.location.y', 'attacker.location.z', 'attacker.name', 'attacker.ranking', 'attacker.teamId', 'attacker.zone', 'common.isGame', 'damageCauserName', 'damageTypeCategory', 'vehicle.feulPercent', 'vehicle.healthPercent', 'vehicle.vehicleId', 'vehicle.vehicleType']`
 
